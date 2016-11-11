@@ -45,3 +45,12 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Site Specific
+__pycache__
+/media
+/tBody
+/statics
+*.sqlite3
+.sass-cache
+manage.py
