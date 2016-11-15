@@ -1,0 +1,17 @@
+{% extends "tBody/base.html" %}
+{% load static %}
+{% load i18n %}
+
+  {% block Title %}tBody{% endblock %}
+  {% block Customcss %}
+  <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}" />
+  {% endblock %}
+
+  {% block mainContent %}
+  <main class="container">
+    <div class="col-sm-12">
+    	<p>-------- Hello world tBody Init --------</p>
+    </div>	
+  </main>
+
+  {% endblock %}
