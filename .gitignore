@@ -51,6 +51,7 @@ __pycache__
 /media
 /tBody
 /statics
+/home
 *.sqlite3
 .sass-cache
 manage.py
