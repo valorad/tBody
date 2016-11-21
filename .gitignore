@@ -51,6 +51,7 @@ __pycache__
 /media
 /tBody
 /statics
+/ng-src
 *.sqlite3
 .sass-cache
 manage.py
