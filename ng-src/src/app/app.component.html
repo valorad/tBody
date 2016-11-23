@@ -1,3 +1,15 @@
 <h1>
-  {{title}}
+  {{ title }}
 </h1>
+
+<div class="container-fluid">
+  <div class="col-sm-12">
+    <main>
+      <router-outlet [ngStyle]="{'background-color':'#eeeeee'}"> Router outlet</router-outlet>
+    </main>
+    You can see a router outlet.
+  </div>
+  <nav>
+    nav bar is designed to shown at bottom.
+  </nav>
+</div>

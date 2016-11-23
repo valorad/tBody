@@ -55,3 +55,4 @@ __pycache__
 *.sqlite3
 .sass-cache
 manage.py
+node_modules
