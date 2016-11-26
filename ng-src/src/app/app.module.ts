@@ -5,16 +5,23 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router'; 
 
 import { tBodyRoutingModule } from './tBody-routing.module'; 
+
+import { GymModule } from './gym/gym.module';
 import { AppComponent } from './app.component';
-import { ISCComponent } from './i-sc/i-sc.component';
+
 import { IndexComponent } from './index/index.component';
+
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ISCComponent,
-    IndexComponent
+
+    IndexComponent,
+
+   
   ],
   imports: [
     BrowserModule,
@@ -22,6 +29,7 @@ import { IndexComponent } from './index/index.component';
     HttpModule,
     RouterModule,
     tBodyRoutingModule,
+    GymModule
   ],
   providers: [],
   bootstrap: [AppComponent]

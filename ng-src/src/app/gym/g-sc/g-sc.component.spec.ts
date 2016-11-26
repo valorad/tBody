@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ISCComponent } from './i-sc.component';
+import { GSCComponent } from './g-sc.component';
 
-describe('ISCComponent', () => {
-  let component: ISCComponent;
-  let fixture: ComponentFixture<ISCComponent>;
+describe('GSCComponent', () => {
+  let component: GSCComponent;
+  let fixture: ComponentFixture<GSCComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ISCComponent ]
+      declarations: [ GSCComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ISCComponent);
+    fixture = TestBed.createComponent(GSCComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
