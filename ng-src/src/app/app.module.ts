@@ -10,6 +10,7 @@ import { GymModule } from './gym/gym.module';
 import { AppComponent } from './app.component';
 
 import { IndexComponent } from './index/index.component';
+import { GymDetailComponent } from './gym/gym-detail/gym-detail.component';
 
 
 
@@ -18,7 +19,7 @@ import { IndexComponent } from './index/index.component';
 @NgModule({
   declarations: [
     AppComponent,
-
+GymDetailComponent,
     IndexComponent,
 
    

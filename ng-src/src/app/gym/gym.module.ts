@@ -13,7 +13,6 @@ import {GSCComponent} from './g-sc/g-sc.component'
   declarations: [
 	GymComponent,
 	GymListComponent,
-	GymDetailComponent,
 	GSCComponent
   ]
 })

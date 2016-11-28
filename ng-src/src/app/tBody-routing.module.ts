@@ -2,21 +2,25 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { IndexComponent } from './index/index.component';
+import { GymDetailComponent } from './gym/gym-detail/gym-detail.component';
 
-export const routingComponents = [
-	IndexComponent,
+// export const routingComponents = [
+// 	IndexComponent,
 
-]
+// ]
 
 const routes: Routes = [
-	{path: '', component: IndexComponent},
+	{path: '', redirectTo: '/index', pathMatch: 'full'},
     {path: 'index', component: IndexComponent},
     {
     	path: 'gym',
     	loadChildren: './gym/gym.module#GymModule'
- },
+ 	},
+ 	{
+	    path: 'gym/id/:id',
+	    component: GymDetailComponent
+	},
 ];
-
 
 
 @NgModule({
