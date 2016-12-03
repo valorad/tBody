@@ -1,0 +1,42 @@
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+#divTBMap {
+    height: 100%;
+}
+
+/* Responsive Settings Start*/
+
+/* Extra small devices (phones, less than 768px) */
+@media only screen and (max-width: 768px) {	
+    main {
+        height: 600px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        height: 900px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    main {
+        height: 1150px;
+    }
+}
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main {
+        height: 1500px;
+    }
+}
+
+/* Responsive Settings End*/
