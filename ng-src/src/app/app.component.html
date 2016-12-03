@@ -1,15 +1,19 @@
-<h1>
-  {{ title }}
-</h1>
+<header class="col-sm-12">
+  <h1>
+    {{ title }}
+  </h1>
+</header>
+
+
+<div class="container-fluid">
+
+  <main class="col-sm-12">
+    <router-outlet></router-outlet>
+  </main>
+
+</div>
 
 <div class="container">
-  <div class="col-sm-12">
-  main
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-    You can see a router outlet.(app.component)
-  </div>
   <nav class="navbar navbar-light">
     <div class="nav navbar-nav">
       <a class="nav-item nav-link active" routerLink="/index">Index<span class="sr-only">(current)</span></a>
