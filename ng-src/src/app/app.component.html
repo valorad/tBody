@@ -1,20 +1,22 @@
-<header class="col-sm-12">
-  <h1>
-    {{ title }}
-  </h1>
+<header class="container-fluid">
+  <div class="col-sm-12">
+    <h1>
+      {{ title }}
+    </h1>
+  </div>
 </header>
 
 
-<div class="container-fluid">
+<main class="container-fluid">
 
-  <main class="col-sm-12">
+  <div class="routerFrame col-sm-12">
     <router-outlet></router-outlet>
-  </main>
+  </div>
 
-</div>
+</main>
 
-<div class="container">
-  <nav class="navbar navbar-light">
+<div class="container-fluid">
+  <nav class="navbar navbar-light navbar-fade">
     <div class="nav navbar-nav">
       <a class="nav-item nav-link active" routerLink="/index">Index<span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" routerLink="/gym">GymList</a>

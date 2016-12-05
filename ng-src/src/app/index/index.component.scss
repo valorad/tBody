@@ -12,21 +12,21 @@ main {
 /* Extra small devices (phones, less than 768px) */
 @media only screen and (max-width: 768px) {	
     main {
-        height: 600px;
+        height: 500px;
     }
 }
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     main {
-        height: 900px;
+        height: 450px;
     }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     main {
-        height: 1150px;
+        height: 800px;
     }
 }
 
