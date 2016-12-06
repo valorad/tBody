@@ -1,14 +1,24 @@
+$theme: rgba(72, 124, 182, 0.8);
+
 header {
-    height: 50px;
-    background-color: green;
+    height: 45px;
+    background-color: $theme;
     h1 {
-        text-align: center;
+        text-align: left;
     }
 }
 
 main {
     padding: 0px;
     div.routerFrame {
+        padding: 0px;
+    }
+}
+
+footer {
+    background-color: $theme;
+    text-align: center;
+    nav .navbar {
         padding: 0px;
     }
 }
