@@ -34,7 +34,7 @@ export class IndexComponent implements OnInit {
   }
 
   /* 加点大函数 */
-  addPoint(map, data: any) {
+  addPoint(map: any, data: any) {
     // 设置图标
 		let bIcon = new BMap.Icon("assets/images/map/marker-activated.png", new BMap.Size(20, 25), {    
 				// 指定定位位置。   				// 当标注显示在地图上时，其所指向的地理位置距离图标左上    				// 角各偏移10像素和25像素。您可以看到在本例中该位置即是  				// 图标中央下端的尖角位置。    
