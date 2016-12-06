@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as $ from "jquery";
 declare var BMap: any;
 
 interface IGym {
@@ -16,6 +17,8 @@ export class IndexComponent implements OnInit {
 
   constructor() {}
 
+  hasInitMap = false;
+
   //前台模拟数据
 
   public gyms: {[id: number]: IGym;} = {
@@ -29,8 +32,23 @@ export class IndexComponent implements OnInit {
     var point = new BMap.Point(104.0650, 30.6578);  // 创建点坐标  
     map.centerAndZoom(point, 15);                 // 初始化地图，设置中心点坐标和地图级别
 
-    // 运行加点函数
-    this.addPoint(map, this.gyms);
+    this.adjustMap(); // 调整地图大小
+    this.addPoint(map, this.gyms); // 运行加点函数
+  }
+
+  adjustMap() {
+    // 调整地图大小
+    let screenY: number = $(window).height();
+    if (!this.hasInitMap) {
+      $(function() {
+        $("main").css("height", screenY - 45 - 54);
+      });
+    }
+    
+    $(window).resize(function() {
+      screenY = $(window).height();
+      $("main").css("height", screenY - 45 - 54);
+    });
   }
 
   /* 加点大函数 */
