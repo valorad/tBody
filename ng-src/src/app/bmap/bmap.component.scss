@@ -3,8 +3,11 @@ main {
     padding: 0px;
 }
 
-#divTBMap {
+section {
     height: 100%;
+    div#divTBMap {
+        height: 100%;
+    }
 }
 
 /* Responsive Settings Start*/
