@@ -78,7 +78,10 @@ export class BMapComponent implements OnInit {
             BMAPLIB_TAB_FROM_HERE //从这里出发
         ]
     };
-    let infoContent = "<div>Du niang 250</div>"
+    let infoContent = `
+    <div>Du niang 250</div>
+    <button>Details</button>
+    `
     let gymInfoWindow = new BMapLib.SearchInfoWindow(map, infoContent, IBOption);
     return gymInfoWindow;
   }
