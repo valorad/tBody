@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     
     $(function() {
       $("main").css("height", screenY - 45 - 54);
-      $("footer").css("width", screenX);
+      //$("footer").css("width", screenX);
     });
 
     
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
       screenX = $(window).width();
       screenY = $(window).height();
       $("main").css("height", screenY - 45 - 54);
-      $("footer").css("width", screenX);
+      //$("footer").css("width", screenX);
     });
   }
 
