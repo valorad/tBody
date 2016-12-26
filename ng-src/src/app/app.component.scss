@@ -1,8 +1,10 @@
-$theme: rgba(72, 124, 182, 0.8);
+$themeBGColor: rgba(72, 124, 182, 0.8);
+$themeFontColor: #eeeeee;
 
 header {
+    color: $themeFontColor;
     height: 45px;
-    background-color: $theme;
+    background-color: $themeBGColor;
     h1 {
         text-align: left;
     }
@@ -11,14 +13,16 @@ header {
 main {
     padding: 0px;
     div.routerFrame {
+        height: 100%;
         padding: 0px;
     }
 }
 
 footer {
+    color: $themeFontColor;
     width: 100%;
     position: fixed;
-    background-color: $theme;
+    background-color: $themeBGColor;
     text-align: center;
     nav .navbar {
         padding: 0px;
