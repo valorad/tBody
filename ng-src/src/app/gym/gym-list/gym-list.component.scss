@@ -1,12 +1,66 @@
 main ul {
     list-style: none;
-    li section {
-        // margin-top: 2px;
-        // margin-right: 10px;
-        height: 100px;
-        border: black solid 1px;
+    padding: 0px;
+    // li section {
+    //     // margin-top: 2px;
+    //     // margin-right: 10px;
+    //     height: 100px;
+    //     border: black solid 1px;
+    // }
+}
+
+
+/* Responsive Settings Start*/
+
+/* Extra small devices (phones, less than 768px) */
+@media only screen and (max-width: 768px) {	
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        ul {
+            li {
+                section {
+                    margin-top: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 }
 
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    main {
+        ul {
+            li {
+                section {
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main {
+        ul {
+            li {
+                section {
+                    margin-top: 20px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* Responsive Settings End*/
 
 
