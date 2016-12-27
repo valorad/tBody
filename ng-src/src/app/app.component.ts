@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   title = 'tBody';
 
   ngOnInit() {
-    this.adjustWindows();
+    //this.adjustWindows();
   }
 
   adjustWindows() {
