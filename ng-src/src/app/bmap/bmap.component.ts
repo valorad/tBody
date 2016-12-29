@@ -65,11 +65,11 @@ export class BMapComponent implements OnInit {
     });
   }
 
-  creategymInfoWindow(map): any {
+  creategymInfoWindow(map: any, id: string): any {
     let IBOption = {
         width: 320,
-        height: 200,
-        title: "key",
+        height: 280,
+        title: id + " 号健身房 - " + this.gymsInfo[id]["description"],
         panel  : "panel",         //检索结果面板
         enableAutoPan : true,     //自动平移
         searchTypes : [
@@ -79,8 +79,12 @@ export class BMapComponent implements OnInit {
         ]
     };
     let infoContent = `
-    <div>Du niang 250</div>
-    <button>Details</button>
+    <div style="text-align: center;margin-top: 3px">
+      <img src="assets/images/gymCarousel1.jpg" class="img img-responsive" style="height:200px" />
+    </div>
+    <footer style="text-align: center; margin-top: 3px;">
+      <a class="btn btn-primary btn-lg" routerLink="/gym/id/`+ id + `">Details</a>
+    </footer>
     `
     let gymInfoWindow = new BMapLib.SearchInfoWindow(map, infoContent, IBOption);
     return gymInfoWindow;
@@ -116,22 +120,7 @@ export class BMapComponent implements OnInit {
 
       // 设置事件。点击某个点弹出信息框
       bMarker.addEventListener("click", function() {
-        // let gymInfoWindow = that.creategymInfoWindow(map);
-        // gymInfoWindow.open(bMarker);
-        let IBOption = {
-            width: 320,
-            height: 200,
-            title: "key",
-            panel  : "panel",         //检索结果面板
-            enableAutoPan : true,     //自动平移
-            searchTypes : [
-                BMAPLIB_TAB_SEARCH,   //周边检索
-                BMAPLIB_TAB_TO_HERE,  //到这里去
-                BMAPLIB_TAB_FROM_HERE //从这里出发
-            ]
-        };
-        let infoContent = "<div>Du niang 250</div>"
-        let gymInfoWindow = new BMapLib.SearchInfoWindow(map, infoContent, IBOption);
+        let gymInfoWindow = that.creategymInfoWindow(map, id);
         gymInfoWindow.open(bMarker);
 
       });
