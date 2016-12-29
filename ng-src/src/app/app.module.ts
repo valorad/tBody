@@ -16,6 +16,7 @@ import { IndexComponent } from './index/index.component';
 import { GymDetailComponent } from './gym/gym-detail/gym-detail.component';
 import { GMapComponent } from './gmap/gmap.component';
 import { BMapComponent } from './bmap/bmap.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -28,6 +29,7 @@ GymDetailComponent,
     IndexComponent,
     GMapComponent,
     BMapComponent,
+    HomeComponent,
 
    
   ],
