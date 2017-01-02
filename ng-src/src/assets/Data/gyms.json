@@ -1,0 +1,26 @@
+[
+    {
+        "id":"0",
+        "location": {
+            "lati": 30.676,
+            "longi": 104.004
+        },
+        "description": "豪华健身房"
+    },
+    {
+        "id":"1",
+        "location": {
+            "lati": 30.613,
+            "longi": 104.068
+        },
+        "description": "舒适健身房"
+    },
+    {
+        "id":"2",
+        "location": {
+            "lati": 30.653,
+            "longi": 104.056
+        },
+        "description": "亲民价健身房"
+    }
+]
