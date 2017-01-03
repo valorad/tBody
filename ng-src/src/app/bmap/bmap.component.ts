@@ -46,7 +46,7 @@ export class BMapComponent implements OnInit {
     var point = new BMap.Point(104.0650, 30.6578);  // 创建点坐标  
     map.centerAndZoom(point, 15);                 // 初始化地图，设置中心点坐标和地图级别
 
-    this.adjustMap(); // 调整地图大小
+    //this.adjustMap(); // 调整地图大小
     this.addPoint(map, this.gymsLocation); // 运行加点函数
   }
 
@@ -83,11 +83,12 @@ export class BMapComponent implements OnInit {
       <img src="assets/images/gymCarousel1.jpg" class="img img-responsive" style="height:200px" />
     </div>
     <footer style="text-align: center; margin-top: 3px;">
-      <a class="btn btn-primary btn-lg" routerLink="/gym/id/`+ id + `">Details</a>
+      <a class="btn btn-primary btn-lg" href="../#/gym/id/`+ id + `">Details</a>
     </footer>
     `
     let gymInfoWindow = new BMapLib.SearchInfoWindow(map, infoContent, IBOption);
     return gymInfoWindow;
+    
   }
 
   /* 加点大函数 */
