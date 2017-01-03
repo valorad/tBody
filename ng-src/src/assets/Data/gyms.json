@@ -1,6 +1,7 @@
 [
     {
-        "id":"0",
+        "pk": 0,
+        "id":"hot",
         "location": {
             "lati": 30.676,
             "longi": 104.004
@@ -8,7 +9,8 @@
         "description": "豪华健身房"
     },
     {
-        "id":"1",
+        "pk": 1,
+        "id":"dilrnvr",
         "location": {
             "lati": 30.613,
             "longi": 104.068
@@ -16,7 +18,8 @@
         "description": "舒适健身房"
     },
     {
-        "id":"2",
+        "pk": 2,
+        "id":"TT",
         "location": {
             "lati": 30.653,
             "longi": 104.056
