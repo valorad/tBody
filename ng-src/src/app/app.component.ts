@@ -14,23 +14,23 @@ export class AppComponent implements OnInit {
     //this.adjustWindows();
   }
 
-  adjustWindows() {
-    // 调整窗口大小
-    let screenX: number = $(window).width();
-    let screenY: number = $(window).height();
+  // adjustWindows() {
+  //   // 调整窗口大小
+  //   let screenX: number = $(window).width();
+  //   let screenY: number = $(window).height();
     
-    $(function() {
-      $("main").css("height", screenY - 45 - 54);
-      //$("footer").css("width", screenX);
-    });
+  //   $(function() {
+  //     $("main").css("height", screenY - 45 - 54);
+  //     //$("footer").css("width", screenX);
+  //   });
 
     
-    $(window).resize(function() {
-      screenX = $(window).width();
-      screenY = $(window).height();
-      $("main").css("height", screenY - 45 - 54);
-      //$("footer").css("width", screenX);
-    });
-  }
+  //   $(window).resize(function() {
+  //     screenX = $(window).width();
+  //     screenY = $(window).height();
+  //     $("main").css("height", screenY - 45 - 54);
+  //     //$("footer").css("width", screenX);
+  //   });
+  // }
 
 }

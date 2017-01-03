@@ -21,10 +21,12 @@ main {
 #footAppRoot {
     color: $themeFontColor;
     width: 100%;
-    position: fixed;
+
+    bottom: 1px;
     background-color: $themeBGColor;
     text-align: center;
     nav .navbar {
         padding: 0px;
     }
+    z-index: 100;
 }
