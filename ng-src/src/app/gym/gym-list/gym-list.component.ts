@@ -17,7 +17,7 @@ export class GymListComponent implements OnInit {
 
   ngOnInit() {
     this.gymService.getGymList().subscribe(
-      resGymData => this.gyms = resGymData,
+  resGymData => {this.gyms = resGymData;},
       resGymError => this.error = resGymError
     );
   }

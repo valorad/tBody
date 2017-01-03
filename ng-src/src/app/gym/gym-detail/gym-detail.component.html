@@ -14,12 +14,12 @@
         <tbody>
           <tr><td>价格</td><td> ￥999.9</td></tr>
           <tr><td>年限</td><td> 1 年</td></tr>
-          <tr><td>坐标： </td><td>{{ gym.location.lati }}N</td><td>{{ gym.location.longi }} E</td></tr>
+          <tr><td>坐标： </td><td>{{gym ? gym.location.lati:'null' }} N</td><td>{{gym? gym.location.longi :'null'}} E</td></tr>
         </tbody>
       </table>
     </div>
     <article>
-      <p>{{gym.location.description || "这家健身房还没有正式的介绍"}}</p>
+      <p>{{gym?gym.description:"这家健身房还没有正式的介绍"}}</p>
     </article>
   </div>
 </header>
