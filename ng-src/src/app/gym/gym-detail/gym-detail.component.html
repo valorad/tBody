@@ -1,27 +1,51 @@
-<header class="container-fluid">
+<header class="container">
   <div class="col-lg-12" id="divCover">
-    <img class="img img-responsive" src="assets/images/gymtest.jpg" alt="gymtest">
+    <img class="img-fluid" src="assets/images/gymtest.jpg" alt="gymtest">
   </div>
-  <div>{{ id }} 健身房</div>
-  <div class="col-lg-2"></div>
-  <div id="divAvatar" class="col-lg-6">
-    avatar
+
+  <div id="divGymAvatar" class="col-lg-6">
+    
   </div>
-  <div class="col-lg-4">
-    <div>ratings⭐️⭐️⭐️⭐️⭐️</div>
+  <div id="divGymDetails" class="col-lg-6">
+    <div><span>{{ id }} 健身房</span></div>
+    <div>评分： ⭐️⭐️⭐️⭐️⭐️</div>
     <div>
       <table>
         <tbody>
-          <tr><td>price</td><td>59.99$</td></tr><tr><td>membership</td><td>1 year</td></tr>
+          <tr><td>价格</td><td> ￥999.9</td></tr>
+          <tr><td>年限</td><td> 1 年</td></tr>
+          <tr><td>坐标： </td><td>{{ gym.location.lati }}N</td><td>{{ gym.location.longi }} E</td></tr>
         </tbody>
       </table>
     </div>
     <article>
-      <p>intro intro intro intro intro intro intro intro intro intro intro intro intro intro intro</p>
+      <p>{{gym.location.description || "这家健身房还没有正式的介绍"}}</p>
     </article>
   </div>
 </header>
 <main>
+
+<hr />
+
+<section class="container">
+  <h4>网友评论</h4>
+  <div class="col-xs-12">
+    <div id="divRateUser" class="col-xs-4">
+      <div id="divRateAvatar">
+        
+      </div>
+      <div>
+        路人甲
+      </div>
+    </div>
+    <div id="divRateContent" class="col-xs-8">
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+      <p>我也不知道为何，就是想点赞</p>
+    </div>
+  </div>
+</section>
+
+<hr />
 
 <footer class="col-lg-12">
   <a class="btn btn-block btn-primary">Go</a>

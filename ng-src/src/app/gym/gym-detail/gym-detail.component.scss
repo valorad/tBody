@@ -1,15 +1,37 @@
+$gap: 10px;
 header {
     #divCover {
         text-align: center;
         padding: 0px;
-       img {
+        margin-top: $gap;
+        margin-bottom: $gap;
+        img {
             margin: 0px auto;
-       }
+        }
     }
-    #divAvatar {
+    #divGymAvatar {
         border-radius: 5px;
         width: 200px;
         height: 200px;
         background-color: #eeeeee;
+    }
+    #divGymDetails {
+        span {
+            font-size: 50px;
+        }
+    }
+}
+
+section {
+    margin-top: $gap;
+    margin-bottom: $gap;
+    div#divRateUser {
+        text-align: center;
+        div#divRateAvatar {
+            margin: 0px auto;
+            height:100px;
+            width: 100px;
+            background-color: #eeeeee;
+        }
     }
 }
