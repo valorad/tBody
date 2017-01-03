@@ -16,8 +16,9 @@ interface IGymLocation {
 })
 export class GymDetailComponent implements OnInit {
   public id: string;
-  public gyms = [];
+  public gyms = []; //所有健身房的数据
   public error: string;
+  public gym = []; //这个健身房的数据
   constructor(private route: ActivatedRoute, router: Router, private gymService: GymService) { }
 
   ngOnInit() {
@@ -27,10 +28,12 @@ export class GymDetailComponent implements OnInit {
        (resGyms) => this.gyms = resGyms,
        (resError) => this.error = resError
      );
-     let location: IGymLocation;
-     //location.lati = this.gyms[id];
-    //  location.longi = 150.8888;
-    //  let description = "observable的数据";
+     this.gym = this.findData(this.id, this.gyms);
+
+    //  let location: IGymLocation;
+    //  location.lati = this.gym["location"]["lati"];
+    //  location.longi = this.gym["location"]["longi"];
+    //  let description = this.gyms["description"];
 
   }
 
@@ -45,4 +48,12 @@ export class GymDetailComponent implements OnInit {
     return gymID;
   }
 
+  findData(id: string, gyms: any): any {
+     for (let gym in gyms) {
+       if (gym["id"] == id) {
+         return gym;
+       }
+     }
+     return null;
+  }
 }
