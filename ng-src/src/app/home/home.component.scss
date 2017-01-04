@@ -1,12 +1,37 @@
 $themeBGColor: rgba(72, 124, 182, 0.8);
 
+.vValue {
+    float: right;
+    color: #d6d6d6;
+}
+
 header {
-    height: 300px;
+    height: 350px;
     background-color: $themeBGColor;
     div#divUserAvatar {
         text-align: center;
         img {
             height: 200px;
+        }
+        p.HName {
+            font-size: 45px;
+        }
+        p.HDesc {
+            color: white;
+        }
+    }
+}
+
+main {
+    ul {
+        list-style: none;
+        padding: 0px;
+        li {
+            border-bottom: solid #eeeeee 1px;
+            height: 40px;
+            div {
+                margin: 15px;
+            }
         }
     }
 }
