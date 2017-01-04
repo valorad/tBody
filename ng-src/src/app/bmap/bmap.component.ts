@@ -83,7 +83,7 @@ export class BMapComponent implements OnInit {
       <img src="assets/images/gymCarousel1.jpg" class="img img-responsive" style="height:200px" />
     </div>
     <footer style="text-align: center; margin-top: 3px;">
-      <a class="btn btn-primary btn-lg" href="../#/gym/id/`+ id + `">Details</a>
+      <a class="btn btn-primary btn-lg" href="../#/gym/id/`+ id + `">详情</a>
     </footer>
     `
     let gymInfoWindow = new BMapLib.SearchInfoWindow(map, infoContent, IBOption);
